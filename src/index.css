@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 220 20% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 20%;
+
+    --primary: 174 60% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 15% 95%;
+    --secondary-foreground: 220 20% 25%;
+
+    --muted: 210 15% 92%;
+    --muted-foreground: 220 10% 50%;
+
+    --accent: 35 90% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 15% 88%;
+    --input: 210 15% 88%;
+    --ring: 174 60% 40%;
+
+    --radius: 0.5rem;
+
+    /* Custom status colors */
+    --status-open: 210 70% 50%;
+    --status-progress: 35 90% 50%;
+    --status-fulfilled: 145 60% 42%;
+
+    /* Urgency colors */
+    --urgency-low: 145 50% 45%;
+    --urgency-medium: 45 90% 50%;
+    --urgency-high: 25 90% 55%;
+    --urgency-critical: 0 75% 55%;
+  }
+
+  .dark {
+    --background: 220 20% 10%;
+    --foreground: 210 20% 95%;
+
+    --card: 220 20% 14%;
+    --card-foreground: 210 20% 95%;
+
+    --popover: 220 20% 14%;
+    --popover-foreground: 210 20% 95%;
+
+    --primary: 174 60% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 15% 20%;
+    --secondary-foreground: 210 20% 90%;
+
+    --muted: 220 15% 25%;
+    --muted-foreground: 210 10% 60%;
+
+    --accent: 35 90% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 25%;
+    --input: 220 15% 25%;
+    --ring: 174 60% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+}
